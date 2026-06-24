@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <center><h2>Captcha Form</h2></center>
+    <center><form style="background-color: rgb(112, 229, 223); color: rgb(7, 1, 1); padding: 20px; width: 400px;" action="/submit-form" method="post">
+        <label for="captcha">Enter Captcha:</label>
+        <input type="text" id="captcha" placeholder="Enter Captcha..." name="captcha">
+        <br><br>
+        <label for="un">Username : </label>
+        <input type="text" id="un" name="username" placeholder="Enter your username...">
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="Enter your email..." id="email">
+        <br>
+        <br>
+        <label for="pwd">Password: <span style="color: red;">*</span> </label>
+        <input type="password" name="password" placeholder="Enter your password..." id="pwd" required>
+        <br>
+        <br>
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number..." pattern="[0-9]{10}">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        <br>
+        <br>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br>
+        <br>
+        <label>Date of Birth with Time:</label>
+        <input type="datetime-local" name="dob-time">
+        <br>
+        <br>
+        <label>Enter your Website URL:</label>
+        <input type="url" name="website" placeholder="https://yourwebsite.com">
+        <br>
+        <br>
+        <label>other</label>
+        <input type="color" name="favcolor">
+        <input type="image" src="/media/frnd.jpg" alt="Submit" width="100" height="100">
+        <br>
+        <br>
+        <label>Rating out of 5:</label>
+        <input type="range" name="rating" min="1" max="5" name="rating" value="3">
+        <br>
+        <br>
+        <label>upload pan card:</label>
+        <input type="file" name="pan-card" accept=".jpg,.jpeg,.png">
+        <br>
+        <br>
+        <label><input type="checkbox" name="subscribe" value="cash">cash</label>
+        <label><input type="checkbox" name="subscribe" value="credit">credit</label>
+        <label><input type="checkbox" name="subscribe" value="debit">debit</label>
+        <br>
+        <br>
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <label><input type="radio"  name="gender" value="other">Other</label>   
+        <br>
+        <br>
+        <label>you allowed</label>
+        <input type="hidden">
+        <br>
+        <br>
+        <label>sawale</label>
+        <input type="search">
+        <br>
+        <br>
+        <label>sawale007</label>
+        <input type="week">
+        <br>
+        <br>
+        <input type="submit"> &nbsp; &nbsp;
+        <input type="reset" value="Cancel">
+        <br><br>
+
+        <button type="button">Help center</button>
+        <br>
+        <br>
+            <button type="reset">Cancel</button>
+            <button type="submit">submit</button>
+    </form></center>
+</body>
+</html>

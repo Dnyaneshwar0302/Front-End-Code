@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h2>User form</h2>
+    <hr>
+    <br>
+    <form>    
+    <label for="un">Name:</label>
+    <input type="text" id="un" name="usename" pattern="^[A-Z]{1}[a-z]{1,50}$" title="first later should capital and remaining all are small">
+    <br>
+    <br>
+    <label for="pn">Phone Number:</label>
+    <input type="tel" id="pn" name="pn" pattern="^[6-9][0-9]{9}$" placeholder="Enter 10-digit phone number"  title="Enter a valid 10-digit Indian phone number" required>                     
+    <br>    
+    <br>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character">
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    <br>
+    <br>
+    <button type = "cancel">Cancel </button>
+    </form>
+</body>
+</html>
