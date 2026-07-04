@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+
+    <style>
+        body{
+            background-color: #e82727;
+            animation-name: colorchange;
+            animation-duration: 3s;
+        }
+        /* @keyframes colorchange {
+            from {background-color: #e82727;}
+            to {background-color: #27e8e8;}
+        } */
+
+            h1 {
+            animation-name: fadeIn;
+            animation-duration: 2s;
+            }
+
+            p {
+            animation-name: slideIn;    
+            animation-duration: 2s;
+            }
+
+
+
+
+        @keyframes colorchange {
+            0% {background-color: #e82727;}
+            100% {background-color: #27e8e8;}
+            50% {background-color: #e8e827;}
+            80% {background-color: #27e827;}
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations in CSS</h1>
+    <p>CSS animations allow you to create smooth transitions and effects on HTML elements. You can define keyframes to specify the styles at various points during the animation.</p>
+</body>
+</html>

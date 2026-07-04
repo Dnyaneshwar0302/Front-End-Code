@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        div#static {
+            position: static;
+            width: 100px; height: 100px; 
+            background-color: aqua;
+            border:2px solid black;
+            left: 100px;
+            right:100px;    
+        }
+
+        div#rel {
+            position: relative;
+            width: 100px; height: 100px; 
+            background-color: yellow;
+            border:2px solid black;
+            left: 105px;
+            /* right:100px; */ 
+            /* top: 100px; */
+            bottom: 104px; 
+        }
+
+        div#parentrel {
+            position: relative;
+            width: 400px; height: 200px; 
+            background-color: red;
+            border:2px solid black;
+            bottom: 100px;
+        }
+
+        div#childabs {
+            position: absolute;
+            width: 100px; height: 100px;
+            background-color: rgb(201, 71, 153);
+            border:2px solid black;
+            left: 105px;
+            top: 10px;
+        }
+
+        div.sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightgreen;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        div.fixed {
+            position: fixed;
+            top: 600px;
+            right: 0;
+            background-color: rgb(78, 62, 223);
+            padding: 10px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="static">
+        Static Div
+    </div>
+
+    <div id="rel">Relative Div</div>
+
+    <div id="parentrel">
+        <div id="childabs">Child absolute</div>
+    </div>
+    <hr>
+    <h1>CSS Sticky & Fixed Positions</h1>
+    <h2>Using position: sticky & fixed</h2>
+
+    <div class="sticky">I have a position Sticky!</div>
+    <div class="fixed">📞</div>
+
+    <div style="padding-bottom: 2000px;">
+       <p> Scroll down to see the sticky and fixed elements in action.</p>
+       <p> The sticky element will stick to the top of the viewport when you reach its scroll position, while the fixed element will remain in place regardless of scrolling.</p>
+       <p> Note: The sticky element will only stick within its parent container, while the fixed element will stay fixed relative to the viewport.</p>
+       <p> You can also experiment with different values for the top, bottom, left, and right properties to see how they affect the positioning of the elements.</p>
+       <p> Remember to test the sticky and fixed elements in different browsers, as their behavior may vary slightly.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/*Universal Selector*/
+ *{
+    font-style: italic;
+    background-color: lightblue;
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+ }
+
+
+ /*Type Selector / Tag Selector*/
+ p{
+    background-color: rgb(119, 213, 230);
+
+ }
+ h1{
+    text-align: center;
+
+ }
+ h2{
+    text-align: center;
+    color: rgb(1, 14, 2);
+ }
+
+ /*ID Selector*/
+ #unique-paragraph{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+ }
+
+ /*Class Selector*/
+ .description{
+    font-size: 18px;
+    color: rgb(1, 14, 2);
+    text-align: justify;
+ }
+
+ .line{
+    text-decoration: underline;
+ }
+
+ /*Group Selector*/
+ h1,h3,h2{
+    background-color: rgb(73, 238, 125);
+
+ }
+
+ /*Attribute Selector*/
+ [class]{
+    color: rgb(1, 14, 2);
+    font-size: 20px;
+    text-align: center;
+ }
+
+ /*descendant Selector*/
+ h1 p{
+    color: rgb(1, 14, 2);
+    font-size: 20px;
+    text-align: center;
+ }  
+
+ /*Child Selector*/
+ h1 > p{
+    color: rgb(150, 17, 239);
+    font-size: 20px;
+    text-align: center;
+ }
+
+ /*Adjacent Sibling Selector*/
+ h1 + p{
+    color: rgb(1, 14, 2);
+    font-size: 20px;
+    text-align: center;
+ }
+
+    /*General Sibling Selector*/
+    h1 ~ p{
+        color: rgb(1, 14, 2);
+        font-size: 20px;
+        text-align: center;
+    }

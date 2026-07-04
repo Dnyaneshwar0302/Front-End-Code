@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in css</title>
+    <link href="gridsstyle.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "header  header"
+                "Sidebar  content"
+                "footer  footer";
+            gap: 10px;
+        }
+        
+
+        .header { grid-area: header; background-color: blueviolet; padding: 20px;}
+        .Sidebar{ grid-area: sidebar; background-color: blanchedalmond; padding: 20px; }
+        .content { grid-area: content; background-color: chartreuse; padding: 20px; }
+        .footer { grid-area: footer; background-color: cornflowerblue; padding: 20px; }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+
+
+    </div>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
